@@ -114,6 +114,11 @@ SECTIONS
    BEGIN_SEG(main, .) SUBALIGN(16)
    {
       BUILD_DIR/asm/entry.o(.text);
+#ifdef VERSION_EU
+      BUILD_DIR/src/game/_Ldtob.o(.text);
+      BUILD_DIR/src/game/_Litob.o(.text);
+      BUILD_DIR/src/game/_Printf.o(.text);
+#endif
       BUILD_DIR/src/game/crash_screen.o(.text);
       BUILD_DIR/src/game/main.o(.text);
       BUILD_DIR/src/game/game_init.o(.text);
@@ -187,6 +192,11 @@ SECTIONS
 #endif
 
       /* data */
+#ifdef VERSION_EU
+      BUILD_DIR/src/game/_Ldtob.o(.data*);
+      BUILD_DIR/src/game/_Litob.o(.data*);
+      BUILD_DIR/src/game/_Printf.o(.data*);
+#endif
       BUILD_DIR/src/game/crash_screen.o(.data*);
       BUILD_DIR/src/game/main.o(.data*);
       BUILD_DIR/src/game/game_init.o(.data*);
@@ -248,6 +258,11 @@ SECTIONS
       */libultra_rom.a:*.o(.scommon*);
 
       /* rodata */
+#ifdef VERSION_EU
+      BUILD_DIR/src/game/_Ldtob.o(.rodata*);
+      BUILD_DIR/src/game/_Litob.o(.rodata*);
+      BUILD_DIR/src/game/_Printf.o(.rodata*);
+#endif
       BUILD_DIR/src/game/crash_screen.o(.rodata*);
       BUILD_DIR/src/game/main.o(.rodata*);
       BUILD_DIR/src/game/game_init.o(.rodata*);
@@ -308,6 +323,11 @@ SECTIONS
    END_SEG(main)
    BEGIN_NOLOAD(main)
    {
+#ifdef VERSION_EU
+      BUILD_DIR/src/game/_Ldtob.o(.bss*);
+      BUILD_DIR/src/game/_Litob.o(.bss*);
+      BUILD_DIR/src/game/_Printf.o(.bss*);
+#endif
       BUILD_DIR/src/game/crash_screen.o(.bss*);
       BUILD_DIR/src/game/main.o(.bss*);
       BUILD_DIR/src/game/game_init.o(.bss*);

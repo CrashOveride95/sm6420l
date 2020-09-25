@@ -528,10 +528,10 @@ $(BUILD_DIR)/lib/src/gu%.o: OPT_FLAGS := -O3
 $(BUILD_DIR)/lib/src/al%.o: OPT_FLAGS := -O3
 
 ifeq ($(VERSION),eu)
-$(BUILD_DIR)/lib/src/_Litob.o: OPT_FLAGS := -O3
-$(BUILD_DIR)/lib/src/_Ldtob.o: OPT_FLAGS := -O3
-$(BUILD_DIR)/lib/src/_Printf.o: OPT_FLAGS := -O3
-$(BUILD_DIR)/lib/src/sprintf.o: OPT_FLAGS := -O3
+$(BUILD_DIR)/src/game/_Litob.o: OPT_FLAGS := -O3
+$(BUILD_DIR)/src/game/_Ldtob.o: OPT_FLAGS := -O3
+$(BUILD_DIR)/src/game/_Printf.o: OPT_FLAGS := -O3
+$(BUILD_DIR)/src/game/sprintf.o: OPT_FLAGS := -O3
 
 # Enable loop unrolling except for external.c (external.c might also have used
 # unrolling, but it makes one loop harder to match).
