@@ -1,4 +1,5 @@
-#include <PR/ultratypes.h>
+#include <ultra64.h>
+#include <PR/os_thread.h>
 #include <PR/os_time.h>
 #include <PR/gbi.h>
 

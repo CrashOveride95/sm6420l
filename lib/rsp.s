@@ -4,10 +4,10 @@
 .section .text
 
 .balign 16
-glabel rspF3DBootStart
+glabel rspbootTextStart
     .incbin "rsp/rspboot.bin"
 .balign 16
-glabel rspF3DBootEnd
+glabel rspbootTextEnd
 
 .balign 16
 .ifndef F3DEX_GBI_SHARED
@@ -30,9 +30,9 @@ glabel rspF3DEnd
 /* Audio Bins */
 
 .balign 16
-glabel rspAspMainStart
+glabel aspMainTextStart
     .incbin "rsp/audio.bin"
-glabel rspAspMainEnd
+glabel aspMainTextEnd
 
 /*
  * LESS COMMON MICROCODES
@@ -145,9 +145,9 @@ glabel rspF3DDataEnd
 /* Audio Data */
 
 .balign 16
-glabel rspAspMainDataStart
+glabel aspMainDataStart
     .incbin "rsp/audio_data.bin"
-glabel rspAspMainDataEnd
+glabel aspMainDataEnd
 
 /* LESS COMMON MICROCODES */
 

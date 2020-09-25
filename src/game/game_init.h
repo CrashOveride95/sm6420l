@@ -1,8 +1,9 @@
 #ifndef GAME_INIT_H
 #define GAME_INIT_H
 
-#include <PR/ultratypes.h>
+#include <ultra64.h>
 #include <PR/gbi.h>
+#include <PR/os_thread.h>
 #include <PR/os_cont.h>
 #include <PR/os_message.h>
 
