@@ -177,6 +177,34 @@ extern long long int gspF3DLX2_Rej_xbusDataStart[],gspF3DLX2_Rej_xbusDataEnd[];
 extern long long int gspL3DEX2_xbusTextStart[],    gspL3DEX2_xbusTextEnd[];
 extern long long int gspL3DEX2_xbusDataStart[],    gspL3DEX2_xbusDataEnd[];
 
+/*========== F3DZEX2/L3DZEX2 ==========*/
+/* FIFO version */
+extern long long int gspF3DZEX2_fifoTextStart[],
+                     gspF3DZEX2_fifoTextEnd[];
+extern long long int gspF3DZEX2_fifoDataStart[],
+                     gspF3DZEX2_fifoDataEnd[];
+extern long long int gspF3DZEX2_NoN_fifoTextStart[],
+                     gspF3DZEX2_NoN_fifoTextEnd[];
+extern long long int gspF3DZEX2_NoN_fifoDataStart[],
+                     gspF3DZEX2_NoN_fifoDataEnd[];
+extern long long int gspL3DZEX2_fifoTextStart[],
+                     gspL3DZEX2_fifoTextEnd[];
+extern long long int gspL3DZEX2_fifoDataStart[],
+                     gspL3DZEX2_fifoDataEnd[];
+/* XBUS version */
+extern long long int gspF3DZEX2_xbusTextStart[],
+                     gspF3DZEX2_xbusTextEnd[];
+extern long long int gspF3DZEX2_xbusDataStart[],
+                     gspF3DZEX2_xbusDataEnd[];
+extern long long int gspF3DZEX2_NoN_xbusTextStart[],
+                     gspF3DZEX2_NoN_xbusTextEnd[];
+extern long long int gspF3DZEX2_NoN_xbusDataStart[],
+                     gspF3DZEX2_NoN_xbusDataEnd[];
+extern long long int gspL3DZEX2_xbusTextStart[],
+                     gspL3DZEX2_xbusTextEnd[];
+extern long long int gspL3DZEX2_xbusDataStart[],
+                     gspL3DZEX2_xbusDataEnd[];
+
 /**************************************************************************
  *
  * decomp ucode names

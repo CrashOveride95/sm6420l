@@ -81,6 +81,7 @@ else
 ifeq ($(GRUCODE),f3dzex) # Fast3DZEX (2.0J / Animal Forest - Dōbutsu no Mori)
   $(warning Fast3DZEX is experimental. Try at your own risk.)
   GRUCODE_DEF := F3DEX_GBI_2
+  GRUCODE_DEF2  :=  F3DZEX_GBI_2
   GRUCODE_ASFLAGS := --defsym F3DEX_GBI_SHARED=1
   TARGET := $(TARGET).f3dzex
   COMPARE := 0
@@ -89,8 +90,13 @@ endif
 endif
 endif
 
+ifeq ($(GRUCODE),f3dzex) 
+GRUCODE_CFLAGS :=  -D$(GRUCODE_DEF2) -D$(GRUCODE_DEF)
+GRUCODE_ASFLAGS := $(GRUCODE_ASFLAGS) --defsym $(GRUCODE_DEF)=1 --defsym $(GRUCODE_DEF2)=1
+else
 GRUCODE_CFLAGS := -D$(GRUCODE_DEF)
 GRUCODE_ASFLAGS := $(GRUCODE_ASFLAGS) --defsym $(GRUCODE_DEF)=1
+endif
 
 ifeq ($(TARGET_N64),0)
   NON_MATCHING := 1
