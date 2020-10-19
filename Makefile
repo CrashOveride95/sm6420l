@@ -251,6 +251,8 @@ ifeq ($(COMPILER),ido)
   endif
 endif
 
+export LD_LIBRARY_PATH=./tools
+
 AS        := $(CROSS)as
 CC        := $(QEMU_IRIX) -silent -L $(IRIX_ROOT) $(IRIX_ROOT)/usr/bin/cc
 CPP       := cpp -P -Wno-trigraphs
@@ -429,7 +431,6 @@ $(BUILD_DIR)/%.ci4: %.ci4.png
 
 ################################################################
 
-export LD_LIBRARY_PATH=./tools
 # compressed segment generation
 
 # TODO: ideally this would be `-Trodata-segment=0x07000000` but that doesn't set the address
