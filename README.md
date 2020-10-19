@@ -11,7 +11,7 @@ A: Newer binutils (Like the one bundled with Ubuntu, 2.34) break linking with li
 
 This puts me at a crossroads of either touching leaked code and requiring GCC, or just using an older linker that works just fine.
 
-I went with the former.
+I went with the latter.
 
 Thanks to "someone2639 on soundcloud xd" for this hacky-ass idea
 
