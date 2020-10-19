@@ -254,7 +254,7 @@ endif
 AS        := $(CROSS)as
 CC        := $(QEMU_IRIX) -silent -L $(IRIX_ROOT) $(IRIX_ROOT)/usr/bin/cc
 CPP       := cpp -P -Wno-trigraphs
-LD        := $(CROSS)ld
+LD        := tools/mips64-elf-ld
 AR        := $(CROSS)ar
 OBJDUMP   := $(CROSS)objdump
 OBJCOPY   := $(CROSS)objcopy
