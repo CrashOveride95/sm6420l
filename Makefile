@@ -429,6 +429,7 @@ $(BUILD_DIR)/%.ci4: %.ci4.png
 
 ################################################################
 
+export LD_LIBRARY_PATH=./tools
 # compressed segment generation
 
 # TODO: ideally this would be `-Trodata-segment=0x07000000` but that doesn't set the address
