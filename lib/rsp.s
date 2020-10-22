@@ -242,7 +242,7 @@ glabel gspL3DEX2_fifoDataEnd
 /* S2DEX2 Data */
 .ifdef S2DEX_GBI_2
 .balign 16
-glabel gspS2DEX_fifoDataStart
+glabel gspS2DEX2_fifoDataStart
     .incbin "lib/PR/s2dex/S2DEX2_data.bin"
-glabel gspS2DEX_fifoDataEnd
+glabel gspS2DEX2_fifoDataEnd
 .endif
