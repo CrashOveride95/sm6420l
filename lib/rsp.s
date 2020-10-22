@@ -37,7 +37,7 @@ glabel gspFast3D_fifoTextEnd
 
 .balign 16
 glabel aspMainTextStart
-    .incbin "rsp/audio.bin"
+    .incbin "lib/PR/audio/aspMain.bin"
 glabel aspMainTextEnd
 
 /*
@@ -158,7 +158,7 @@ glabel gspFast3D_fifoDataEnd
 
 .balign 16
 glabel aspMainDataStart
-    .incbin "rsp/audio_data.bin"
+    .incbin "lib/PR/audio/aspMain_data.bin"
 glabel aspMainDataEnd
 
 /* LESS COMMON MICROCODES */
