@@ -78,7 +78,7 @@ ifeq ($(GRUCODE),f3d_new) # Fast3D 2.0H (Shindou)
   TARGET := $(TARGET).f3d_new
   COMPARE := 0
 else
-ifeq ($(GRUCODE),f3dzex) # Fast3DZEX (2.0J / Animal Forest - Dōbutsu no Mori)
+ifeq ($(GRUCODE),f3dzex) # Fast3DZEX (2.08J / Animal Forest - Dōbutsu no Mori)
   $(warning Fast3DZEX is experimental. Try at your own risk.)
   GRUCODE_DEF := F3DEX_GBI_2
   GRUCODE_DEF2  :=  F3DZEX_GBI_2

@@ -27,9 +27,9 @@ glabel gspFast3D_fifoTextEnd
     glabel gspF3DEX_fifoTextEnd
     .endif
     .else /* Fast3DZEX */
-    glabel gspF3DZEX2_fifoTextStart
+    glabel gspF3DZEX2_PosLight_fifoTextStart
         .incbin "lib/PR/f3dex2/F3DZEX.bin"
-    glabel gspF3DZEX2_fifoTextEnd
+    glabel gspF3DZEX2_PosLight_fifoTextEnd
     .endif
 .endif
 
@@ -148,9 +148,9 @@ glabel gspFast3D_fifoDataEnd
     glabel gspF3DEX_fifoDataEnd
     .endif
     .else /* Fast3DZEX */
-    glabel gspF3DZEX2_fifoDataStart
+    glabel gspF3DZEX2_PosLight_fifoDataStart
         .incbin "lib/PR/f3dex2/F3DZEX_data.bin"
-    glabel gspF3DZEX2_fifoDataEnd
+    glabel gspF3DZEX2_PosLight_fifoDataEnd
     .endif
 .endif
 
